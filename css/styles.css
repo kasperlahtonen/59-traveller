@@ -1,0 +1,73 @@
+@import url('brand.css');
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #333;
+    padding: 1rem;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin-left: 1rem;
+}
+
+.footer-content {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+.hero {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: url('/images/hero.jpg') center/cover no-repeat;
+    color: white;
+}
+
+.highlights {
+    padding: 2rem;
+    text-align: center;
+}
+
+.button {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.company-info {
+    margin: 0.5rem 0;
+    font-size: 0.9rem;
+    color: #cccccc; /* or var(--text-color) if you want */
+}
+
+
+
+.social-links {
+    margin: 1rem 0;
+}
+
+.social-links a {
+    color: white;
+    margin: 0 0.5rem;
+    font-size: 1.2rem;
+    display: inline-block;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: var(--accent-color); /* use your brand accent color */
+}
