@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const lang = localStorage.getItem("lang") || "fi";
     loadHeaderFooter();
     loadLanguage(lang);
+    loadMessageBox();
 
     document.getElementById("lang-switch").addEventListener("click", () => {
         const newLang = (localStorage.getItem("lang") === "fi") ? "en" : "fi";
@@ -31,6 +32,14 @@ function loadHeaderFooter() {
         });
 }
 
+function loadMessageBox() {
+    fetch("/components/message-box.html")
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById("message-box").innerHTML = data;
+        });
+}
+
 function loadLanguage(lang) {
     fetch(`/lang/${lang}.json`)
         .then(res => res.json())
@@ -44,3 +53,11 @@ function loadLanguage(lang) {
             document.getElementById("lang-switch").textContent = (lang === "fi") ? "EN" : "FI";
         });
 }
+
+mapboxgl.accessToken = 'YOUR_MAPBOX_API_KEY';
+  const map = new mapboxgl.Map({
+      container: 'mapbox-map',
+      style: 'mapbox://styles/mapbox/streets-v11',
+      center: [0, 0], // [lng, lat]
+      zoom: 2
+  });

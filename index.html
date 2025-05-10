@@ -5,26 +5,96 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Travel Agency</title>
     <link rel="stylesheet" href="/css/styles.css">
+     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css" rel="stylesheet" />
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js"></script>
 </head>
 <body>
     <header></header>
 
     <main>
-        <section class="hero">
-            <h1>Welcome to Your Travel Agency</h1>
-            <p>Discover unforgettable destinations and plan your perfect trip with us.</p>
-            <a href="/destinations.html" class="button">Explore Destinations</a>
+        <section class="hero-banner">
+            <video autoplay muted loop playsinline class="hero-video">
+                <source src="/videos/Peralada-Resort-Video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="hero-banner-overlay">
+                <h1>Golf with a story.</h1>
+            </div>
         </section>
 
-        <section class="highlights">
-            <h2>Why Travel With Us?</h2>
-            <ul>
-                <li>✈ Tailor-made packages</li>
-                <li>🏨 Handpicked hotels</li>
-                <li>🌍 Local expertise</li>
-            </ul>
+        <section class="description">
+            <div class="description-inner">
+                <h2 class="description-header">Suomen kokenein golfmatkatoimisto<br>- kun pakettimatkat eivät riitä</h2>
+                <p class="description-text">
+                    59 Traveller järjestää unohtumattomia golfmatkoja, joissa on sisältöä ja tarina.  Haluamme tarjota golfareille sisältörikkaita, 
+                    huolella rakennettuja elämyksiä - kiinnostavina ajankohtina, hyvässä seurassa. Yhdistämme pelaamisen huippukentillä, laadukkaan majoituksen, 
+                    kiehtovan ohjelman ja asiantuntevan isännöinnin. Matkojen isäntänä toimii mm. Mikko Korhonen, kaksinkertainen DP World Tour -voittaja ja 
+                    The 59 Fundin, ammattilaisia tukevan rahaston, perustaja.
+                </p>
+            </div>
         </section>
+
+        <section class="featured-journeys">
+            <div class="featured-journeys-inner">
+                <h2 class="featured-journeys-header">Featured Journeys</h2>
+                <div class="featured-journeys-list">
+                    <a href="/example-dunhill-links.html" class="journey-link">
+                        <div class="journey-link-card">
+                            <img src="/images/dunhill-links-image1.jpg" alt="Dunhill Links" class="journey-link-img">
+                            <div class="journey-link-info">
+                                <h3>Dunhill Links Experience</h3>
+                                <p>Discover the magic of the Dunhill Links with our exclusive journey package.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-short">
+            <div class="about-short-inner">
+                <h2 class="about-short-header">About 59 Traveller</h2>
+                <p class="about-short-text">
+                    59 Traveller is Finland's most experienced golf travel agency. Our passion is to create unique, story-rich golf journeys for those who want more than just a package trip. With decades of expertise and a love for the game, we design experiences that combine top courses, quality accommodation, and memorable moments.
+                </p>
+            </div>
+        </section>
+
+        <section class="explore-section">
+            <div class="explore-inner">
+                <h2 class="explore-header">Explore</h2>
+                <div class="explore-columns">
+                    <div class="explore-cards">
+                        <div class="explore-card">
+                            <img src="/images/golf-area1.jpg" alt="Golf Area 1" class="explore-card-img">
+                            <div class="explore-card-info">
+                                <h3>Golf Area 1</h3>
+                                <p>Discover the beauty and challenge of Golf Area 1.</p>
+                            </div>
+                        </div>
+                        <div class="explore-card">
+                            <img src="/images/golf-area2.jpg" alt="Golf Area 2" class="explore-card-img">
+                            <div class="explore-card-info">
+                                <h3>Golf Area 2</h3>
+                                <p>Experience world-class courses in Golf Area 2.</p>
+                            </div>
+                        </div>
+                        <!-- Add more cards as needed -->
+                    </div>
+                    <div class="explore-map">
+                        <!-- Mapbox map will be embedded here -->
+                        <div id="mapbox-map" style="width:100%;height:400px;background:#eaeaea;border-radius:14px;"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="message-section">
+            <div id="message-box"></div>
+        </section>
+
     </main>
 
     <footer></footer>

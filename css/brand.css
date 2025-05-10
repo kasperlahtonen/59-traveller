@@ -4,15 +4,16 @@
 
    :root {
     /* Colors */
-    --primary-color: #0057A8;
-    --secondary-color: #27542a;
-    --accent-color: #00C2A8;
+    --primary-color: #042326; /*Dark Green*/
+    --secondary-color: #47663B; /*Dark Green (lighter)*/
+    --accent-color: #EED3B1; /*Light Brown*/
     --text-color: #333333;
     --background-color: #f5f5f5;
+    --background-color-off-white: #f1f2ef;
 
     /* Fonts */
-    --font-heading: 'Montserrat', sans-serif;
-    --font-body: 'Open Sans', sans-serif;
+    --font-heading: 'Gotham', sans-serif;
+    --font-body: 'Gotham', sans-serif;
 
     /* Spacing */
     --spacing-small: 0.5rem;
