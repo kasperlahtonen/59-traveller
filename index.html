@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Travel Agency</title>
     <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/explore-cards.css">
      
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link href="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css" rel="stylesheet" />
@@ -26,66 +27,75 @@
 
         <section class="description">
             <div class="description-inner">
-                <h2 class="description-header">Suomen kokenein golfmatkatoimisto<br>- kun pakettimatkat eivät riitä</h2>
+                <h2 class="description-header">Suomen kokenein golfmatkatoimisto<br>- One liner osuus</h2>
                 <p class="description-text">
-                    59 Traveller järjestää unohtumattomia golfmatkoja, joissa on sisältöä ja tarina.  Haluamme tarjota golfareille sisältörikkaita, 
-                    huolella rakennettuja elämyksiä - kiinnostavina ajankohtina, hyvässä seurassa. Yhdistämme pelaamisen huippukentillä, laadukkaan majoituksen, 
-                    kiehtovan ohjelman ja asiantuntevan isännöinnin. Matkojen isäntänä toimii mm. Mikko Korhonen, kaksinkertainen DP World Tour -voittaja ja 
-                    The 59 Fundin, ammattilaisia tukevan rahaston, perustaja.
+                    59 Traveller is Finland's most experienced golf travel agency. Our passion is to create unique, 
+                    story-rich golf journeys for those who want more than just a package trip. 
+                    With decades of expertise and a love for the game, we design experiences that combine 
+                    top courses, quality accommodation, and memorable moments.
                 </p>
             </div>
         </section>
 
-        <section class="featured-journeys">
-            <div class="featured-journeys-inner">
-                <h2 class="featured-journeys-header">Featured Journeys</h2>
-                <div class="featured-journeys-list">
-                    <a href="/example-dunhill-links.html" class="journey-link">
-                        <div class="journey-link-card">
-                            <img src="/images/dunhill-links-image1.jpg" alt="Dunhill Links" class="journey-link-img">
-                            <div class="journey-link-info">
-                                <h3>Dunhill Links Experience</h3>
-                                <p>Discover the magic of the Dunhill Links with our exclusive journey package.</p>
-                            </div>
-                        </div>
-                    </a>
+        <section class="combined-content">
+            <div class="combined-content-inner">
+                <div class="combined-content-column about-short-column">
+                    <div class="about-short-inner">
+                        <h2 class="about-short-header">Related to story and custom trips</h2>
+                        <p class="about-short-text">
+                            59 Traveller järjestää unohtumattomia golfmatkoja, joissa on sisältöä ja tarina.  Haluamme tarjota golfareille sisältörikkaita, 
+                            huolella rakennettuja elämyksiä - kiinnostavina ajankohtina, hyvässä seurassa. Yhdistämme pelaamisen huippukentillä, laadukkaan majoituksen, 
+                            kiehtovan ohjelman ja asiantuntevan isännöinnin. Matkojen isäntänä toimii mm. Mikko Korhonen, kaksinkertainen DP World Tour -voittaja ja 
+                            The 59 Fundin, ammattilaisia tukevan rahaston, perustaja.
+                        </p>
+                    </div>
                 </div>
-            </div>
-        </section>
-
-        <section class="about-short">
-            <div class="about-short-inner">
-                <h2 class="about-short-header">About 59 Traveller</h2>
-                <p class="about-short-text">
-                    59 Traveller is Finland's most experienced golf travel agency. Our passion is to create unique, story-rich golf journeys for those who want more than just a package trip. With decades of expertise and a love for the game, we design experiences that combine top courses, quality accommodation, and memorable moments.
-                </p>
+                <div class="combined-content-column featured-journeys-column">
+                    <div class="featured-journeys-inner">
+                        <h2 class="featured-journeys-header">Featured Journeys</h2>
+                        <div class="featured-journeys-list">
+                            <a href="/example-dunhill-links.html" class="journey-link">
+                                <div class="journey-link-card">
+                                    <img src="/images/dunhill-links-image1.jpg" alt="Dunhill Links" class="journey-link-img">
+                                    <div class="journey-link-info">
+                                        <h3>Dunhill Links Experience</h3>
+                                        <p>Discover the magic of the Dunhill Links with our exclusive journey package.</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
         <section class="explore-section">
             <div class="explore-inner">
                 <h2 class="explore-header">Explore</h2>
+                <p class="explore-lead">
+                    Discover the best golf destinations and areas we offer. Browse our curated selection of top golf regions and see their locations on the interactive map.
+                </p>
                 <div class="explore-columns">
                     <div class="explore-cards">
-                        <div class="explore-card">
-                            <img src="/images/golf-area1.jpg" alt="Golf Area 1" class="explore-card-img">
-                            <div class="explore-card-info">
-                                <h3>Golf Area 1</h3>
-                                <p>Discover the beauty and challenge of Golf Area 1.</p>
+                        <div class="carousel-container">
+                            <div class="carousel-track">
+                                <!-- Cards will be dynamically inserted here -->
+                            </div>
+                            <div class="carousel-controls">
+                                <button class="carousel-button prev" aria-label="Previous destination">
+                                    <i class="fas fa-chevron-left"></i>
+                                </button>
+                                <div class="carousel-dots">
+                                    <!-- Dots will be dynamically inserted here -->
+                                </div>
+                                <button class="carousel-button next" aria-label="Next destination">
+                                    <i class="fas fa-chevron-right"></i>
+                                </button>
                             </div>
                         </div>
-                        <div class="explore-card">
-                            <img src="/images/golf-area2.jpg" alt="Golf Area 2" class="explore-card-img">
-                            <div class="explore-card-info">
-                                <h3>Golf Area 2</h3>
-                                <p>Experience world-class courses in Golf Area 2.</p>
-                            </div>
-                        </div>
-                        <!-- Add more cards as needed -->
                     </div>
                     <div class="explore-map">
-                        <!-- Mapbox map will be embedded here -->
-                        <div id="mapbox-map" style="width:100%;height:400px;background:#eaeaea;border-radius:14px;"></div>
+                        <div id="satellite-map"></div>
                     </div>
                 </div>
             </div>
@@ -100,5 +110,6 @@
     <footer></footer>
 
     <script src="/js/main.js"></script>
+    <script src="/js/carousel.js"></script>
 </body>
 </html>

@@ -1,0 +1,138 @@
+.explore-card {
+    width: 380px;
+    height: 550px;
+    border-radius: 16px;
+    box-shadow: 
+        0 8px 16px rgba(7, 17, 18, 0.2);
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    flex: 0 0 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.explore-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 
+        0 12px 24px rgba(7, 17, 18, 0.25);
+    z-index: 10;
+}
+
+.explore-card-info {
+    padding: 20px;
+    height: 100%;
+    flex: 1;
+    min-height: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.explore-card-img-container {
+    width: 100%;
+    overflow: hidden;
+    height: 280px;
+    position: relative;
+    border-radius: 16px 16px 0 0;
+}
+
+.explore-card-img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.explore-card-info {
+    padding: 20px;
+    text-align: left;
+    color: white;
+    background-color: var(--primary-color);
+}
+
+.explore-card-info h3 {
+    font-size: 1.4em;
+    margin: 0 0 10px 0;
+    text-align: left;
+    font-weight: 500;
+    color: var(--accent-color);
+    font-family: var(--font-heading);
+}
+
+.explore-card-info p {
+    font-size: 0.9em;
+    margin: 0 0 15px 0;
+    text-align: left;
+    line-height: 1.6;
+    color: white;
+}
+
+.explore-card-info .best-season {
+    font-size: 0.8em;
+    color: var(--accent-color);
+    margin-top: auto;
+    padding-top: 10px;
+}
+
+/* Carousel specific styles */
+.carousel-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+}
+
+.carousel-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1.5rem;
+    gap: 1rem;
+}
+
+.carousel-button {
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s;
+}
+
+.carousel-button:hover {
+    background: var(--accent-color);
+}
+
+.carousel-button:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
+
+.carousel-dots {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.carousel-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #ddd;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.carousel-dot.active {
+    background: var(--primary-color);
+}
