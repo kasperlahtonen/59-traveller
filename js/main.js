@@ -7,65 +7,78 @@ document.addEventListener("DOMContentLoaded", () => {
     loadLanguage(lang);
     loadMessageBox();
 
-    mapboxgl.accessToken = 'pk.eyJ1Ijoia2FzcGVybGFodG9uZW4iLCJhIjoiY203bHBtbXM5MGM0MjJrczZpMWJteGpwdCJ9.8jSzxNuPUGkVDLdIPfvykg';
-
+    // Initialize map only when it comes into viewport
     const satelliteMapContainer = document.getElementById('satellite-map');
-    let satelliteMap;
-
     if (satelliteMapContainer) {
-        satelliteMap = new mapboxgl.Map({
-            container: 'satellite-map',
-            style: 'mapbox://styles/mapbox/satellite-streets-v12',
-            center: [2.3, 48.8], // Default center, will be updated by carousel
-            zoom: 1.5      // Default zoom, will be updated by carousel
-        });
-
-        satelliteMap.on('style.load', () => {
-            console.log('Satellite map style loaded');
-            satelliteMap.addSource('mapbox-dem', {
-                'type': 'raster-dem',
-                'url': 'mapbox://mapbox.mapbox-terrain-dem-v1',
-                'tileSize': 512,
-                'maxzoom': 14
+        const mapObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    // Map is in viewport, initialize it
+                    initializeMap(satelliteMapContainer);
+                    // Once initialized, we don't need to observe anymore
+                    mapObserver.unobserve(entry.target);
+                }
             });
-            satelliteMap.setTerrain({ 'source': 'mapbox-dem', 'exaggeration': 1.5 });
-
-            satelliteMap.addControl(new mapboxgl.NavigationControl());
-            satelliteMap.addControl(new mapboxgl.FullscreenControl());
-
-            // Pass the map instance to the carousel if it exists
-            if (window.destinationCarouselInstance && typeof window.destinationCarouselInstance.setMap === 'function') {
-                window.destinationCarouselInstance.setMap(satelliteMap);
-            } else {
-                // Poll for a short time in case carousel.js initializes slightly later
-                let attempts = 0;
-                const intervalId = setInterval(() => {
-                    attempts++;
-                    if (window.destinationCarouselInstance && typeof window.destinationCarouselInstance.setMap === 'function') {
-                        window.destinationCarouselInstance.setMap(satelliteMap);
-                        clearInterval(intervalId);
-                    } else if (attempts > 10) { // Try for ~1 second
-                        clearInterval(intervalId);
-                        console.warn('Carousel instance not found or setMap not available after polling.');
-                    }
-                }, 100);
-            }
-            
-            // The initial globe animation is removed; carousel will control first destination zoom.
+        }, {
+            // Start loading when the map container is 20% visible
+            threshold: 0.2
         });
 
-        satelliteMap.on('load', () => {
-            console.log("Map fully loaded (including tiles)");
-        });
-
-        satelliteMap.on('error', (e) => {
-            console.error('Mapbox error:', e.error);
-        });
-
-    } else {
-        console.error('Satellite map container not found');
+        mapObserver.observe(satelliteMapContainer);
     }
 });
+
+// Separate map initialization into its own function
+function initializeMap(container) {
+    mapboxgl.accessToken = 'pk.eyJ1Ijoia2FzcGVybGFodG9uZW4iLCJhIjoiY203bHBtbXM5MGM0MjJrczZpMWJteGpwdCJ9.8jSzxNuPUGkVDLdIPfvykg';
+
+    const satelliteMap = new mapboxgl.Map({
+        container: 'satellite-map',
+        style: 'mapbox://styles/mapbox/satellite-streets-v12',
+        center: [2.3, 48.8],
+        zoom: 1.5
+    });
+
+    satelliteMap.on('style.load', () => {
+        console.log('Satellite map style loaded');
+        satelliteMap.addSource('mapbox-dem', {
+            'type': 'raster-dem',
+            'url': 'mapbox://mapbox.mapbox-terrain-dem-v1',
+            'tileSize': 512,
+            'maxzoom': 14
+        });
+        satelliteMap.setTerrain({ 'source': 'mapbox-dem', 'exaggeration': 1.5 });
+
+        satelliteMap.addControl(new mapboxgl.NavigationControl());
+        satelliteMap.addControl(new mapboxgl.FullscreenControl());
+
+        // Pass the map instance to the carousel if it exists
+        if (window.destinationCarouselInstance && typeof window.destinationCarouselInstance.setMap === 'function') {
+            window.destinationCarouselInstance.setMap(satelliteMap);
+        } else {
+            // Poll for a short time in case carousel.js initializes slightly later
+            let attempts = 0;
+            const intervalId = setInterval(() => {
+                attempts++;
+                if (window.destinationCarouselInstance && typeof window.destinationCarouselInstance.setMap === 'function') {
+                    window.destinationCarouselInstance.setMap(satelliteMap);
+                    clearInterval(intervalId);
+                } else if (attempts > 10) {
+                    clearInterval(intervalId);
+                    console.warn('Carousel instance not found or setMap not available after polling.');
+                }
+            }, 100);
+        }
+    });
+
+    satelliteMap.on('load', () => {
+        console.log("Map fully loaded (including tiles)");
+    });
+
+    satelliteMap.on('error', (e) => {
+        console.error('Mapbox error:', e.error);
+    });
+}
 
 function loadHeaderFooter() {
     fetch("/components/header.html")
