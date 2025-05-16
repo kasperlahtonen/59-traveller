@@ -7,5 +7,6 @@ export default {
     },
     define: {
       'process.env': {}
-    }
+    },
+    base: '/'
   }
