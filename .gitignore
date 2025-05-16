@@ -3,3 +3,4 @@ images/
 videos/
 assets/
 .DS_Store
+node_modules/

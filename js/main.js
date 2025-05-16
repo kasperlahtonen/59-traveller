@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // Separate map initialization into its own function
 function initializeMap(container) {
-    mapboxgl.accessToken = 'pk.eyJ1Ijoia2FzcGVybGFodG9uZW4iLCJhIjoiY203bHBtbXM5MGM0MjJrczZpMWJteGpwdCJ9.8jSzxNuPUGkVDLdIPfvykg';
+    mapboxgl.accessToken = import.meta.env.VITE_MAPBOX_TOKEN;
 
     const satelliteMap = new mapboxgl.Map({
         container: 'satellite-map',
