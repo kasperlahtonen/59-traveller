@@ -4,5 +4,8 @@ export default {
     },
     server: {
       port: 3000
+    },
+    define: {
+      'process.env': {}
     }
   }

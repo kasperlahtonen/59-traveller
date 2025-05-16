@@ -1,0 +1,67 @@
+{
+    "destinations": [
+        {
+            "destination_name": "Costa Brava",
+            "country": "Spain",
+            "latitude": 41.9818,
+            "longitude": 3.1907,
+            "description": "The rugged coast of Catalonia features some of Spain's finest golf courses, combining Mediterranean charm with challenging layouts. Home to the prestigious PGA Catalunya Resort.",
+            "best_season": "March to June, September to November",
+            "image": "images/costa-brava-golf-image-1.jpg"
+        },
+        {
+            "destination_name": "Argentina",
+            "country": "Argentina",
+            "latitude": -34.6037,
+            "longitude": -58.3816,
+            "description": "Home to world-class golf courses set against the stunning backdrop of the Andes Mountains and Patagonian landscapes. The country offers a unique blend of European-style courses and natural beauty.",
+            "best_season": "October to April",
+            "image": "images/argentina-golf-image-1.jpg"
+        },
+        {
+            "destination_name": "Mauritius",
+            "country": "Mauritius",
+            "latitude": -20.3484,
+            "longitude": 57.5522,
+            "description": "A tropical paradise with championship golf courses designed by legends like Ernie Els and Bernhard Langer. The courses offer spectacular ocean views and challenging play.",
+            "best_season": "May to December",
+            "image": "images/mauritius-golf-image-1.jpg"
+        },
+        {
+            "destination_name": "Northern Italy",
+            "country": "Italy",
+            "latitude": 45.4642,
+            "longitude": 9.1900,
+            "description": "Features world-class golf courses set against the backdrop of the Italian Alps and beautiful lakes. The region combines golf with rich cultural experiences and fine dining.",
+            "best_season": "April to October",
+            "image": "images/northern-italy-golf-image-1.jpg"
+        },
+        {
+            "destination_name": "Belek",
+            "country": "Turkey",
+            "latitude": 36.8625,
+            "longitude": 31.0556,
+            "description": "Turkey's premier golf destination with multiple championship courses designed by golf legends. The area offers luxury resorts and courses along the Mediterranean coast.",
+            "best_season": "March to June, September to November",
+            "image": "images/belek-golf-image-1.jpg"
+        },
+        {
+            "destination_name": "Dominican Republic",
+            "country": "Dominican Republic",
+            "latitude": 18.4861,
+            "longitude": -69.9312,
+            "description": "Home to the Caribbean's finest golf courses, including the famous Teeth of the Dog. Features courses designed by Pete Dye, Jack Nicklaus, and Tom Fazio.",
+            "best_season": "December to April",
+            "image": "images/dominican-republic-golf-image-1.jpg"
+        },
+        {
+            "destination_name": "South Africa",
+            "country": "South Africa",
+            "latitude": -33.9249,
+            "longitude": 18.4241,
+            "description": "Offers diverse golf experiences from coastal courses to inland championship layouts. Home to the famous Gary Player Country Club and numerous other world-class courses.",
+            "best_season": "September to May",
+            "image": "images/south-africa-golf-image-1.jpg"
+        }
+    ]
+}

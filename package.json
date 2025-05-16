@@ -22,5 +22,8 @@
   "description": "",
   "devDependencies": {
     "vite": "^6.3.5"
+  },
+  "dependencies": {
+    "cloudinary": "^2.6.1"
   }
 }

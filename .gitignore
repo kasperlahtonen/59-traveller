@@ -1,6 +1,5 @@
 .env
-images/
-videos/
-assets/
 .DS_Store
 node_modules/
+dist/
+videos/
