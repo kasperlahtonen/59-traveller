@@ -81,7 +81,7 @@ function initializeMap(container) {
 }
 
 function loadHeaderFooter() {
-    fetch("/components/header.html")
+    fetch("./components/header.html")
         .then(res => res.text())
         .then(data => {
             document.querySelector("header").innerHTML = data;
@@ -97,7 +97,7 @@ function loadHeaderFooter() {
         })
         .catch(error => console.error('Error loading header:', error));
 
-    fetch("/components/footer.html")
+    fetch("./components/footer.html")
         .then(res => res.text())
         .then(data => {
             document.querySelector("footer").innerHTML = data;
@@ -106,7 +106,7 @@ function loadHeaderFooter() {
 }
 
 function loadMessageBox() {
-    fetch("/components/message-box.html")
+    fetch("./components/message-box.html")
         .then(res => res.text())
         .then(data => {
             const messageBox = document.getElementById("message-box");
@@ -118,7 +118,7 @@ function loadMessageBox() {
 }
 
 function loadLanguage(lang) {
-    fetch(`/lang/${lang}.json`)
+    fetch(`./lang/${lang}.json`)
         .then(res => {
             if (!res.ok) {
                 throw new Error(`HTTP error! status: ${res.status}`);
