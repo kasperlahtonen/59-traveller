@@ -245,7 +245,7 @@ header {
 .hero {
     text-align: center;
     padding: 4rem 2rem;
-    background: url('/images/hero.jpg') center/cover no-repeat;
+    background: url('./assets/images/hero.jpg') center/cover no-repeat;
     color: white;
 }
 
@@ -760,6 +760,28 @@ header {
     max-width: 900px;
     margin: 0 auto;
     padding: 0 1.5rem;
+
+
+}
+
+.journey-in-nutshell {
+    position: relative;
+    overflow: hidden;
+}
+
+.bg-image-nutshell {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.journey-in-nutshell .nutshell-inner {
+    position: relative;
+    z-index: 2;
 }
 
 .journey-in-nutshell h2 {
@@ -802,10 +824,7 @@ header {
     margin-top: 0.2rem;
 }
 
-.bg-image-nutshell {
-    background: url('/images/dunhill-links-image2.jpg') center/cover no-repeat;
-    position: relative;
-}
+
 .bg-image-nutshell::before {
     content: '';
     position: absolute;

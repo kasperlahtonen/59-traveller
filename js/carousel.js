@@ -13,7 +13,7 @@ class DestinationCarousel {
 
     async init() {
         try {
-            const response = await fetch('/assets/destinations.json');
+            const response = await fetch('./assets/destinations.json');
             const data = await response.json();
             this.destinations = data.destinations;
             
@@ -38,10 +38,10 @@ class DestinationCarousel {
             card.setAttribute('data-destination', destination.destination_name);
             card.innerHTML = `
                 <div class="explore-card-img-container">
-                    <img src="/${destination.image}" 
+                    <img src="./assets/images/${destination.image}" 
                          alt="${destination.destination_name}" 
                          class="explore-card-img"
-                         onerror="this.src='/images/destinations/default-destination.jpg'">
+                         onerror="this.src='./assets/images/destinations/default-destination.jpg'">
                 </div>
                 <div class="explore-card-info">
                     <h3>${destination.destination_name}</h3>
