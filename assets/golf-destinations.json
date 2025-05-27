@@ -1,0 +1,159 @@
+{
+    "destinations": [
+      {
+        "destination_name": "Costa Brava",
+        "resorts_and_courses": [
+          "Camiral Golf & Wellness",
+          "Empordà Golf Club and Resort",
+          "Peralada Resort",
+          "La Costa Beach & Golf Resort",
+          "Golf D'Aro - Mas Nou"
+        ],
+        "latitude": 41.9634853,
+        "longitude": 3.0283375,
+        "description": "I will fill",
+        "image": "https://res.cloudinary.com/dw5q6gqb3/image/upload/v1748163033/costa-brava-golf-image-1_cdr3qm.jpg"
+      },
+      {
+        "destination_name": "Costa Daurada",
+        "resorts_and_courses": [
+          "Infinitum Golf Resort"
+        ],
+        "latitude": 41.0771933,
+        "longitude": 1.1606425,
+        "description": "I will fill",
+        "image": "https://res.cloudinary.com/dw5q6gqb3/image/upload/v1748163280/costa-daurada-Golf-image_nrrn97.jpg"
+      },
+      {
+        "destination_name": "Costa Barcelona",
+        "resorts_and_courses": [
+          "Real Club de Golf El Prat",
+          "Club de Golf Llavaneras",
+          "Club de Golf Vallromanes",
+          "Barcelona Golf Resort & Spa",
+          "Golf Montanyà"
+        ],
+        "latitude": 41.5962976,
+        "longitude": 2.1911573,
+        "description": "I will fill",
+        "image": "https://res.cloudinary.com/dw5q6gqb3/image/upload/v1748164030/costa-barcelona-image_lvlmea.jpg"
+      },
+      {
+        "destination_name": "Torino",
+        "resorts_and_courses": [
+          "Royal Park I Roveri",
+          "Golf Club Torino – La Mandria",
+          "Golf Club Biella – Le Betulle",
+          "Golf Club Margara"
+        ],
+        "latitude": 45.2039318,
+        "longitude": 7.6229801,
+        "description": "I will fill",
+        "image": "https://res.cloudinary.com/dw5q6gqb3/image/upload/v1748164030/torino-image_p1v5ig.jpg"
+      },
+      {
+        "destination_name": "Lago Maggiore",
+        "resorts_and_courses": [
+          "Bogogno Golf Resort",
+          "Golf Club Castelconturbia",
+          "Golf Des Iles Borromees",
+          "Golf Club Varese"
+        ],
+        "latitude": 45.7474313,
+        "longitude": 8.6036885,
+        "description": "I will fill",
+        "image": "https://res.cloudinary.com/dw5q6gqb3/image/upload/v1748164030/lago-maggiore-image_vx8iup.jpg"
+      },
+      {
+        "destination_name": "Lombardy",
+        "resorts_and_courses": [
+          "Golf Club Bergamo L'Albenza",
+          "Franciacorta Golf Club",
+          "Arzaga Golf",
+          "Garda Golf Country Club",
+          "Chervò Golf Hotel and Resort San Vigilio",
+          "Circolo Golf Villa D'Este",
+          "Golf Club Menaggio Cadenabbia"
+        ],
+        "latitude": 45.6155151,
+        "longitude": 9.7141594,
+        "description": "I will fill",
+        "image": "https://res.cloudinary.com/dw5q6gqb3/image/upload/v1748164030/lombardy-image_d6ooyr.jpg"
+      },
+      {
+        "destination_name": "Tuscany",
+        "resorts_and_courses": [
+          "Le Pavoniere Golf & Country Club",
+          "Circolo Golf Ugolino Firenze",
+          "Terme di Saturnia Resort",
+          "Argentario Golf & Wellness Resort",
+          "Golf Toscana Resort Castelfalfi",
+          "Rosewood Castiglion del Bosco",
+          "Antognolla Golf"
+        ],
+        "latitude": 43.2699516,
+        "longitude": 11.1810066,
+        "description": "I will fill",
+        "image": "https://res.cloudinary.com/dw5q6gqb3/image/upload/v1748164029/tuscany-image_akzfvm.webp"
+      },
+      {
+        "destination_name": "Lazio",
+        "resorts_and_courses": [
+          "Marco Simone Golf & Country Club",
+          "Olgiata Golf Club",
+          "Circolo del Golf Roma Acquasanta"
+        ],
+        "latitude": 41.9514983,
+        "longitude": 12.5170065,
+        "description": "I will fill",
+        "image": "https://res.cloudinary.com/dw5q6gqb3/image/upload/v1748164029/lazio-image_z0ckhc.jpg"
+      },
+      {
+        "destination_name": "Puglia",
+        "resorts_and_courses": [
+          "San Domenico Golf"
+        ],
+        "latitude": 40.65,
+        "longitude": 17.95,
+        "description": "I will fill",
+        "image": "https://res.cloudinary.com/dw5q6gqb3/image/upload/v1748164029/puglia-image_knshjx.jpg"
+      },
+      {
+        "destination_name": "Sicily",
+        "resorts_and_courses": [
+          "Verdura Resort",
+          "Picciolo Etna Golf Resort"
+        ],
+        "latitude": 37.6614724,
+        "longitude": 14.150098,
+        "description": "I will fill",
+        "image": "https://res.cloudinary.com/dw5q6gqb3/image/upload/v1748164029/sicily-image_j6xw0z.jpg"
+      },
+      {
+        "destination_name": "Dominican Republic",
+        "resorts_and_courses": [
+          "Casa de Campo Resort",
+          "Punta Espada Golf Club",
+          "Corales Golf Club",
+          "Punta Cana Resort"
+        ],
+        "latitude": 18.4895256,
+        "longitude": -68.5132693,
+        "description": "I will fill",
+        "image": "https://res.cloudinary.com/dw5q6gqb3/image/upload/v1748164064/dominican-golf-image-1_souvhf.jpg"
+      },
+      {
+        "destination_name": "Mauritius",
+        "resorts_and_courses": [
+          "Constance Belle Mare Plage",
+          "Paradis Beachcomber Golf Resort & Spa",
+          "Heritage Awali Golf & Spa Resort",
+          "Anahita Golf & Spa Resort"
+        ],
+        "latitude": -20.3461053,
+        "longitude": 57.5697874,
+        "description": "I will fill",
+        "image": "https://res.cloudinary.com/dw5q6gqb3/image/upload/v1748164064/mauritius-golf-image-1_skyt4i.jpg"
+      }
+    ]
+  }

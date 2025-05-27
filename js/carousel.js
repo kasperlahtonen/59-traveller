@@ -11,19 +11,23 @@ class DestinationCarousel {
         this.init();
     }
 
+    get isMobile() {
+        return window.innerWidth <= 768;
+    }
+
     async init() {
         try {
-            const response = await fetch('./assets/destinations.json');
+            const response = await fetch('./assets/golf-destinations.json');
             const data = await response.json();
             this.destinations = data.destinations;
             
             this.createCards();
             this.createDots();
-            this.updateButtons();
             this.addEventListeners();
+            this.updateButtons();
             
             // If the map instance was already set by the time destinations loaded, attempt to zoom.
-            if (this.map) {
+            if (this.map && !this.isMobile) {
                 this.zoomToCurrentDestination();
             }
         } catch (error) {
@@ -38,7 +42,7 @@ class DestinationCarousel {
             card.setAttribute('data-destination', destination.destination_name);
             card.innerHTML = `
                 <div class="explore-card-img-container">
-                    <img src="./assets/images/${destination.image}" 
+                    <img src="${destination.image}" 
                          alt="${destination.destination_name}" 
                          class="explore-card-img"
                          onerror="this.src='./assets/images/destinations/default-destination.jpg'">
@@ -46,7 +50,6 @@ class DestinationCarousel {
                 <div class="explore-card-info">
                     <h3>${destination.destination_name}</h3>
                     <p>${destination.description}</p>
-                    <p class="best-season">Best time to visit: ${destination.best_season}</p>
                 </div>
             `;
             this.track.appendChild(card);
@@ -81,32 +84,39 @@ class DestinationCarousel {
         if (currentDestination) {
             this.map.flyTo({
                 center: [currentDestination.longitude, currentDestination.latitude],
-                zoom: 4,
+                zoom: 7,
                 duration: 3000
             });
         }
     }
 
     goToSlide(index) {
+        if (this.isMobile) return; // No slide functionality on mobile
+        
         this.currentIndex = index;
-        this.track.style.transform = `translateX(-${index * 100}%)`;
+        this.track.style.transform = `translateX(-${index * 99.8}%)`;
         this.updateDots();
         this.updateButtons();
         this.zoomToCurrentDestination();
     }
 
     addEventListeners() {
-        this.prevButton.addEventListener('click', () => {
-            if (this.currentIndex > 0) {
-                this.goToSlide(this.currentIndex - 1);
-            }
-        });
+        // Button navigation (for desktop)
+        if (this.prevButton) {
+            this.prevButton.addEventListener('click', () => {
+                if (this.currentIndex > 0) {
+                    this.goToSlide(this.currentIndex - 1);
+                }
+            });
+        }
 
-        this.nextButton.addEventListener('click', () => {
-            if (this.currentIndex < this.destinations.length - 1) {
-                this.goToSlide(this.currentIndex + 1);
-            }
-        });
+        if (this.nextButton) {
+            this.nextButton.addEventListener('click', () => {
+                if (this.currentIndex < this.destinations.length - 1) {
+                    this.goToSlide(this.currentIndex + 1);
+                }
+            });
+        }
 
         // Add keyboard navigation
         document.addEventListener('keydown', (e) => {
@@ -120,6 +130,8 @@ class DestinationCarousel {
 
     // New method to receive the map instance
     setMap(mapInstance) {
+        if (this.isMobile) return; // No map functionality on mobile
+        
         this.map = mapInstance;
         // If destinations are already loaded by the time map is set, attempt to zoom.
         if (this.destinations && this.destinations.length > 0) {

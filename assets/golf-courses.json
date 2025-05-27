@@ -1,0 +1,484 @@
+{
+    "destinations": [
+      {
+        "name": "Camiral Golf & Wellness",
+        "destination": "Costa Brava",
+        "website": "https://www.camiral.com/en/",
+        "latitude": 41.8551327,
+        "longitude": 2.7627694,
+        "Address": "Camiral Golf & Wellness, 17445, Girona, Spain",
+        "description": "I will fill this later",
+        "image": "I will fill later"
+      },
+      {
+        "name": "Empordà Golf Club and Resort",
+        "destination": "Costa Brava",
+        "website": "https://www.empordagolf.com/",
+        "latitude": 42.0151336,
+        "longitude": 3.1362733,
+        "Address": "Empordà Golf Club and Resort, Spain",
+        "description": "I will fill this later",
+        "image": "I will fill later"
+      },
+      {
+        "name": "Peralada Resort",
+        "destination": "Costa Brava",
+        "website": "https://www.hotelperalada.com/en/golf",
+        "latitude": 42.3116994,
+        "longitude": 3.0210772,
+        "Address": "Peralada, Catalonia, Spain",
+        "description": "I will fill this later",
+        "image": "I will fill later"
+      },
+      {
+        "name": "La Costa Beach & Golf Resort",
+        "destination": "Costa Brava",
+        "website": "https://resortlacosta.com/en/home.html",
+        "latitude": 41.9986575,
+        "longitude": 3.1968662,
+        "Address": "Avinguda dels Arenals de Mar, 17255 Pals, Spain",
+        "description": "I will fill this later",
+        "image": "I will fill later"
+      },
+      {
+        "name": "Torremorina Golf & Spa Resort",
+        "destination": "Costa Brava",
+        "website": "https://www.hoteltorremirona.com/en",
+        "latitude": 42.233464,
+        "longitude": 2.866224,
+        "Address": "N-260, Km. 46, 17744 Navata, Girona, Espanja",
+        "description": "I will fill this later",
+        "image": "I will fill later"
+      },
+      {
+        "name": "Golf D'Aro - Mas Nou",
+        "destination": "Costa Brava",
+        "website": "https://www.golfdaro.com/en/",
+        "latitude": 41.8338845,
+        "longitude": 3.0247012,
+        "Address": "Club Golf d'Aro, Carrer Clavells, 17250 Castell d'Aro, Platja d'Aro i s'Agaró, Spain",
+        "description": "I will fill this later",
+        "image": "I will fill later"
+      },
+      {
+        "name": "Infinitum Golf Resort",
+        "destination": "Costa Daurada",
+        "website": "https://www.infinitumliving.com/en/golf",
+        "latitude": 41.0771933,
+        "longitude": 1.1606425,
+        "Address": "Hills Course, Carrer del Camí del Racó, 43840 Salou, Spain",
+        "description": "I will fill this later",
+        "image": "I will fill later"
+      },
+      {
+        "name": "Real Club de Golf El Prat",
+        "destination": "Barcelona",
+        "website": "https://www.realclubdegolfelprat.com/en/",
+        "latitude": 41.5735131,
+        "longitude": 2.0538932,
+        "Address": "Real Club de Golf el Prat, Carrer de les Mares de la Plaza de Mayo, 17, 08227 Terrassa, Spain",
+        "description": "I will fill this later",
+        "image": "I will fill later"
+      },
+      {
+        "name": "Club de Golf Llavaneras",
+        "destination": "Barcelona",
+        "website": "https://golfllavaneras.com/",
+        "latitude": 41.562027,
+        "longitude": 2.484153,
+        "Address": "Club de Golf Llavaneras, Spain",
+        "description": "I will fill this later",
+        "image": "I will fill later"
+      },
+      {
+        "name": "Club de Golf Vallromanes",
+        "destination": "Barcelona",
+        "website": "https://www.clubdegolfvallromanes.com/",
+        "latitude": 41.5345601,
+        "longitude": 2.2853404,
+        "Address": "Club de Golf Vallromanes, Spain",
+        "description": "I will fill this later",
+        "image": "I will fill later"
+      },
+      {
+        "name": "Barcelona Golf Resort & Spa",
+        "destination": "Barcelona",
+        "website": "https://golfbarcelona.com/en/home/",
+        "latitude": 41.492708,
+        "longitude": 1.84918774,
+        "Address": "OAK, avinguda del Montcau, 08635 Sant Esteve Sesrovires, Spain",
+        "description": "I will fill this later",
+        "image": "I will fill later"
+      },
+      {
+        "name": "Golf Montanyà",
+        "destination": "Barcelona",
+        "website": "https://golfmontanya.com/",
+        "latitude": 41.8186796,
+        "longitude": 2.2832122,
+        "Address": "Club de golf Osona - Muntanyà - El Brull, Carrer de la Terma, 08553 el Brull, Spain",
+        "description": "I will fill this later",
+        "image": "I will fill later"
+      },
+      {
+        "name": "Royal Park I Roveri",
+        "destination": "Torino",
+        "website": "https://www.royalparkgolf.it/en/home-en/",
+        "latitude": 45.187939,
+        "longitude": 7.5529878,
+        "Address": "Rotta Cerbiatta, 10076 Druento TO, Italy",
+        "description": "I will fill this later",
+        "image": "I will fill later"
+      },
+      {
+        "name": "Golf Club Torino – La Mandria",
+        "destination": "Torino",
+        "website": "https://www.circologolftorino.it/en",
+        "latitude": 45.2050476,
+        "longitude": 7.5450227,
+        "Address": "Circolo Golf Torino La Mandria, Via Giovanni Agnelli 40, 10075 Fiano TO, Italy",
+        "description": "I will fill this later",
+        "image": "I will fill later"
+      },
+      {
+        "name": "Golf Club Biella – Le Betulle",
+        "destination": "Torino",
+        "website": "https://golfclubbiella.com/en/",
+        "latitude": 45.482428,
+        "longitude": 7.980676,
+        "Address": "2, 13887 Magnano BI, Italy",
+        "description": "I will fill this later",
+        "image": "I will fill later"
+      },
+      {
+        "name": "Golf Club Margara",
+        "destination": "Torino",
+        "website": "https://www.golfmargara.it/?lang=en",
+        "latitude": 44.9403127,
+        "longitude": 8.412234,
+        "Address": "Golf Club Margara, Strada Vergani Nanni, 15043 Fubine Monferrato AL, Italy",
+        "description": "I will fill this later",
+        "image": "I will fill later"
+      },
+      {
+        "name": "Bogogno Golf Resort",
+        "destination": "Lago Maggiore",
+        "website": "https://www.bogognogolfresort.com/site/",
+        "latitude": 45.6504983,
+        "longitude": 8.52761362,
+        "Address": "Golf Club Bogogno, Via Sant'Isidoro 1, 28010 Bogogno NO, Italy",
+        "description": "I will fill this later",
+        "image": "I will fill later"
+      },
+      {
+        "name": "Golf Club Castelconturbia",
+        "destination": "Lago Maggiore",
+        "website": "https://www.golfclubcastelconturbia.it/",
+        "latitude": 45.6515251,
+        "longitude": 8.5732865,
+        "Address": "Golf Club Castelconturbia, Via Castelconturbia 10, 28010 Conturbia NO, Italy",
+        "description": "I will fill this later",
+        "image": "I will fill later"
+      },
+      {
+        "name": "Golf Des Iles Borromees",
+        "destination": "Lago Maggiore",
+        "website": "http://www.golfdesilesborromees.it/eng/",
+        "latitude": 45.8529786,
+        "longitude": 8.5482506,
+        "Address": "Golf Club des Iles Borromées, Sentiero della Mascarana, 28833 Brovello-Carpugnino VB, Italy",
+        "description": "I will fill this later",
+        "image": "I will fill later"
+      },
+      {
+        "name": "Golf Club Varese",
+        "destination": "Lago Maggiore",
+        "website": "https://www.golfclubvarese.it/en/",
+        "latitude": 45.834723,
+        "longitude": 8.7646043,
+        "Address": "Golf Club Varese, Via Vittorio Veneto 59, 21020 Luvinate VA, Italy",
+        "description": "I will fill this later",
+        "image": "I will fill later"
+      },
+      {
+        "name": "Golf Club Bergamo L'Albenza",
+        "destination": "Lombardy",
+        "website": "https://golfbergamo.club/",
+        "latitude": 45.7447802,
+        "longitude": 9.5675775,
+        "Address": "Golf Club Bergamo L'Albenza, Via Longoni 12, 24030 Almenno San Bartolomeo BG, Italy",
+        "description": "I will fill this later",
+        "image": "I will fill later"
+      },
+      {
+        "name": "Franciacorta Golf Club",
+        "destination": "Lombardy",
+        "website": "https://www.franciacortagolfclub.it/en/",
+        "latitude": 45.6239333,
+        "longitude": 9.99846,
+        "Address": "Golf Club Franciacorta, Via Provinciale 34/B, 25040 Timoline BS, Italy",
+        "description": "I will fill this later",
+        "image": "I will fill later"
+      },
+      {
+        "name": "Arzaga Golf",
+        "destination": "Lombardy",
+        "website": "https://www.arzagagolf.it/en",
+        "latitude": 45.5117585,
+        "longitude": 10.4699961,
+        "Address": "Arzaga Golf Club, Via dei Riali 1, 25080 Calvagese della Riviera BS, Italy",
+        "description": "I will fill this later",
+        "image": "I will fill later"
+      },
+      {
+        "name": "Garda Golf Country Club",
+        "destination": "Lombardy",
+        "website": "https://gardagolf.it/en/",
+        "latitude": 45.5429659,
+        "longitude": 10.5194276,
+        "Address": "Via Omodeo 2, 25080 Soiano del Lago BS, Italy",
+        "description": "I will fill this later",
+        "image": "I will fill later"
+      },
+      {
+        "name": "Chervò Golf Hotel and Resort San Vigilio",
+        "destination": "Lombardy",
+        "website": "https://www.gardahotelsanvigiliogolf.it/",
+        "latitude": 45.40848368,
+        "longitude": 10.5948582,
+        "Address": "Chervò Golf San Vigilio, noway, 25010 Pozzolengo BS, Italy",
+        "description": "I will fill this later",
+        "image": "I will fill later"
+      },
+      {
+        "name": "Circolo Golf Villa D'Este",
+        "destination": "Lombardy",
+        "website": "https://www.golfvilladeste.com/",
+        "latitude": 45.7779774,
+        "longitude": 9.1401147,
+        "Address": "Golf Villa D'Este, Via Cantù 13, 22030 Montorfano CO, Italy",
+        "description": "I will fill this later",
+        "image": "I will fill later"
+      },
+      {
+        "name": "Golf Club Menaggio Cadenabbia",
+        "destination": "Lombardy",
+        "website": "https://www.golfclubmenaggio.com/",
+        "latitude": 46.0170859,
+        "longitude": 9.2190542,
+        "Address": "Golf Club Menaggio & Cadenabbia, Via A. Wyatt 54, 22017 Croce CO, Italy",
+        "description": "I will fill this later",
+        "image": "I will fill later"
+      },
+      {
+        "name": "Le Pavoniere Golf & Country Club",
+        "destination": "Tuscany",
+        "website": "https://www.pavoniere.it/",
+        "latitude": 43.84267372,
+        "longitude": 11.0578283,
+        "Address": "Golf Club Le Pavoniere, Via Giulio Braga, 59016 Prato PO, Italy",
+        "description": "I will fill this later",
+        "image": "I will fill later"
+      },
+      {
+        "name": "Circolo Golf Ugolino Firenze",
+        "destination": "Tuscany",
+        "website": "https://www.golfugolino.it/it/",
+        "latitude": 43.6973443,
+        "longitude": 11.2965772,
+        "Address": "Via Chiantigiana per Strada 3, 50023 Impruneta FI, Italy",
+        "description": "I will fill this later",
+        "image": "I will fill later"
+      },
+      {
+        "name": "Terme di Saturnia Resort",
+        "destination": "Tuscany",
+        "website": "https://www.termedisaturnia.it/en",
+        "latitude": 42.64870037,
+        "longitude": 11.5167147,
+        "Address": "Terme Di Saturnia Spa & Golf, SP10, 58014 Manciano GR, Italy",
+        "description": "I will fill this later",
+        "image": "I will fill later"
+      },
+      {
+        "name": "Argentario Golf & Wellness Resort",
+        "destination": "Tuscany",
+        "website": "https://www.argentarioresort.it/en/",
+        "latitude": 42.4199375,
+        "longitude": 11.1768442,
+        "Address": "Strada Vicinale delle Piane, 58013 Convento Padri Passionisti GR, Italy",
+        "description": "I will fill this later",
+        "image": "I will fill later"
+      },
+      {
+        "name": "Golf Toscana Resort Castelfalfi",
+        "destination": "Tuscany",
+        "website": "https://www.castelfalfi.com/it",
+        "latitude": 43.5410519,
+        "longitude": 10.8570686,
+        "Address": "Golf Club Castelfalfi, Via Cappella del Lupo, Montaione FI, Italy",
+        "description": "I will fill this later",
+        "image": "I will fill later"
+      },
+      {
+        "name": "Rosewood Castiglion del Bosco",
+        "destination": "Tuscany",
+        "website": "https://www.rosewoodhotels.com/en/castiglion-del-bosco",
+        "latitude": 43.083843,
+        "longitude": 11.421964,
+        "Address": "3CMC+HW Castiglion del Bosco, Sienan maakunta, Italia",
+        "description": "I will fill this later",
+        "image": "I will fill later"
+      },
+      {
+        "name": "Antognolla Golf",
+        "destination": "Tuscany",
+        "website": "https://www.antognollagolf.com/resort",
+        "latitude": 43.230725,
+        "longitude": 12.340325,
+        "Address": "68GW+H9 San Giovanni del Pantano, Perugian maakunta, Italia",
+        "description": "I will fill this later",
+        "image": "I will fill later"
+      },
+      {
+        "name": "Marco Simone Golf & Country Club",
+        "destination": "Lazio",
+        "website": "https://golfmarcosimone.com/it/",
+        "latitude": 41.963316,
+        "longitude": 12.6401473,
+        "Address": "Marco Simone Golf and Country Club, Via della Lince, 00131 Colleverde RM, Italy",
+        "description": "I will fill this later",
+        "image": "I will fill later"
+      },
+      {
+        "name": "Olgiata Golf Club",
+        "destination": "Lazio",
+        "website": "https://www.olgiatagolfclub.com/?lang=en",
+        "latitude": 42.0396334,
+        "longitude": 12.3692011,
+        "Address": "Olgiata Golf Club, Strada L, Rome RM, Italy",
+        "description": "I will fill this later",
+        "image": "I will fill later"
+      },
+      {
+        "name": "Circolo del Golf Roma Acquasanta",
+        "destination": "Lazio",
+        "website": "https://golfroma.it/",
+        "latitude": 41.8515456,
+        "longitude": 12.5416712,
+        "Address": "Golfplatz, Via Appia Nuova 716a, 00174 Rome RM, Italy",
+        "description": "I will fill this later",
+        "image": "I will fill later"
+      },
+      {
+        "name": "San Domenico Golf",
+        "destination": "Puglia",
+        "website": "https://www.sandomenicogolf.com/en/san-domenico-golf-puglia/",
+        "latitude": 40.877112,
+        "longitude": 17.400947,
+        "Address": "V9GX+GQ Savelletri, Brindisin maakunta, Italia",
+        "description": "I will fill this later",
+        "image": "I will fill later"
+      },
+      {
+        "name": "Verdura Resort",
+        "destination": "Sicily",
+        "website": "https://www.roccofortehotels.com/hotels-and-resorts/verdura-resort/",
+        "latitude": 37.46917818,
+        "longitude": 13.1967765,
+        "Address": "Verdura Golf & Spa Resort, Strada statale Sud Occidentale Sicula, 92019 Sciacca AG, Italy",
+        "description": "I will fill this later",
+        "image": "I will fill later"
+      },
+      {
+        "name": "Picciolo Etna Golf Resort",
+        "destination": "Sicily",
+        "website": "https://www.siciliaspiccioloetnagolf.it/",
+        "latitude": 37.8537666,
+        "longitude": 15.1034194,
+        "Address": "Il Picciolo Etna Golf Resort, Via Nazionale Rovittello, 95012 Solicchiata CT, Italy",
+        "description": "I will fill this later",
+        "image": "I will fill later"
+      },
+      {
+        "name": "Casa de Campo Resort",
+        "destination": "Dominican Republic",
+        "website": "https://www.casadecampo.com.do/golf/",
+        "latitude": 18.4115082,
+        "longitude": -68.934169,
+        "Address": "Lower Pool, Calle Costamar, Golf Villas I, La Romana, 22000, Dominican Republic",
+        "description": "I will fill this later",
+        "image": "I will fill later"
+      },
+      {
+        "name": "Punta Espada Golf Club",
+        "destination": "Dominican Republic",
+        "website": "https://www.puntaespadagolf.com/",
+        "latitude": 18.45496767,
+        "longitude": -68.4152002,
+        "Address": "Avenida Punta Espada, Punta Cana, La Altagracia, Dominican Republic",
+        "description": "I will fill this later",
+        "image": "I will fill later"
+      },
+      {
+        "name": "Corales Golf Club",
+        "destination": "Dominican Republic",
+        "website": "https://www.puntacana.com/en/golf",
+        "latitude": 18.565263,
+        "longitude": -68.33986,
+        "Address": "Paseo de los Fundadores, Punta Cana, La Altagracia, 23300, Dominican Republic",
+        "description": "I will fill this later",
+        "image": "I will fill later"
+      },
+      {
+        "name": "Punta Cana Resort",
+        "destination": "Dominican Republic",
+        "website": "https://www.puntacana.com/en/",
+        "latitude": 18.5263635,
+        "longitude": -68.364048,
+        "Address": "Avenida La Cana, Punta Cana, La Altagracia, 23300, Dominican Republic",
+        "description": "I will fill this later",
+        "image": "I will fill later"
+      },
+      {
+        "name": "Constance Belle Mare Plage",
+        "destination": "Mauritius",
+        "website": "https://www.constancehotels.com/en/hotels-resorts/belle-mare-plage/",
+        "latitude": -20.1657573,
+        "longitude": 57.7636406,
+        "Address": "The Legend Golf Course - Belle Mare Plage, B59, Poste de Flacq VCA 41511, Mauritius",
+        "description": "I will fill this later",
+        "image": "I will fill later"
+      },
+      {
+        "name": "Paradis Beachcomber Golf Resort & Spa",
+        "destination": "Mauritius",
+        "website": "https://www.beachcomber-hotels.com/en/hotel/paradis-beachcomber",
+        "latitude": -20.4369893,
+        "longitude": 57.3215156,
+        "Address": "Le Paradis Golf Course, B113, Le Morne VCA 91202, Mauritius",
+        "description": "I will fill this later",
+        "image": "I will fill later"
+      },
+      {
+        "name": "Heritage Awali Golf & Spa Resort",
+        "destination": "Mauritius",
+        "website": "https://heritageresorts.mu/hotels-mauritius/awali-all-inclusive",
+        "latitude": -20.5032971,
+        "longitude": 57.40779836,
+        "Address": "Heritage Golf Course, Coastal Road Bel Ombre, Bel Ombre VCA, Mauritius",
+        "description": "I will fill this later",
+        "image": "I will fill later"
+      },
+      {
+        "name": "Anahita Golf & Spa Resort",
+        "destination": "Mauritius",
+        "website": "https://www.anahita.mu/en",
+        "latitude": -20.2783776,
+        "longitude": 57.78619515,
+        "Address": "Anahita Golf Course, Beau Champ, Mauritius, Jugun Road, Grand River South East 42211, Mauritius",
+        "description": "I will fill this later",
+        "image": "I will fill later"
+      }
+    ]
+  }
