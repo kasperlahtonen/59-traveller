@@ -14,10 +14,12 @@ header {
     left: 0;
     width: 100%;
     z-index: 1000;
-    background: rgba(255, 255, 255, 0.05); /* White with 15% opacity */
-    backdrop-filter: blur(1px);
-    -webkit-backdrop-filter: blur(1px);
+    background: rgba(255, 255, 255, 0.10); /* Increased from 0.05 to 0.15 for better visibility */
+    backdrop-filter: blur(3px); /* Increased from 1px to 12px for stronger glass effect */
+    -webkit-backdrop-filter: blur(3px);
     transition: transform 0.3s cubic-bezier(0.4,0,0.2,1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05); /* Subtle border for definition */
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.05); /* Soft shadow for depth */
 }
 
 .header-hidden {
@@ -39,7 +41,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
+    padding: 0.7rem 1.8rem;
     width: 100%;
 }
 
@@ -197,7 +199,6 @@ header {
     margin-bottom: 0.5rem;
     display: flex;
     justify-content: center;
-    margin-top: -24px;
 }
 
 .company-logo .logo-img {
@@ -262,7 +263,7 @@ header {
 }
 
 .iagto-logo {
-    margin-bottom: 2.5rem;
+    margin-bottom: 1.5rem;
     display: flex;
     justify-content: center;
 }
@@ -521,19 +522,14 @@ header {
 }
 
 .journey-banner {
-    width: 100vw;
     position: relative;
-    left: 50%;
-    right: 50%;
-    margin-left: -50vw;
-    margin-right: -50vw;
-    overflow: hidden;
+    width: 100%;
+    height: 100vh;
     max-height: 1000px;
+    overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #eaeaea;
-    height: 1000px;
 }
 
 .journey-banner-video {
@@ -548,7 +544,7 @@ header {
     object-fit: cover;
     object-position: top center;
     z-index: 1;
-    display: block;
+    /* display: block; */
 }
 
 .journey-banner-overlay {
@@ -877,7 +873,7 @@ header {
 
 .explore-section {
     background: var(--background-color-off-white);
-    padding: 6rem 0 6rem 0;
+    padding: 6rem 0 3rem 0;
 }
 
 .explore-inner {
@@ -1566,27 +1562,6 @@ header {
    ======================================== */
 
 /* Large tablets and small desktops */
-@media (max-width: 1100px) {
-    .explore-columns {
-        flex-direction: column;
-        gap: 3rem;
-    }
-    
-    .explore-cards {
-        flex: 1 1 100%;
-        max-width: 500px;
-        margin: 0 auto;
-    }
-    
-    .explore-map {
-        min-width: 0;
-        margin-top: 2rem;
-    }
-    
-    #satellite-map {
-        height: 500px;
-    }
-}
 
 /* Tablets */
 @media (max-width: 1024px) {
@@ -1613,6 +1588,29 @@ header {
     .business-combined-content-inner {
         padding: 0 1rem;
     }
+    .explore-columns {
+        flex-direction: column;
+        gap: 3rem;
+    }
+    
+    .explore-cards {
+        flex: 1 1 100%;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    
+    .explore-map {
+        min-width: 0;
+        margin-top: 2rem;
+    }
+    
+    #satellite-map {
+        height: 500px;
+    }
+
+    .explore-section {
+        padding-bottom: 0;
+    }
     
     .message-section {
         padding: 6rem 1rem;
@@ -1620,6 +1618,10 @@ header {
     
     .explore-inner {
         padding: 0 1.5rem;
+    }
+    
+    .explore-map {
+        display: none;
     }
 }
 
@@ -2042,7 +2044,6 @@ header {
     
     .trip-price-content p {
         font-size: 1rem;
-        margin-bottom: 1rem;
     }
     
     .trip-price-content h3 {
@@ -2104,7 +2105,7 @@ header {
     }
     
     .explore-card {
-        flex: 0 0 320px;
+        flex: 0 0 380px;
         height: 520px;
     }
     
@@ -2137,6 +2138,7 @@ header {
         margin: 2rem auto;
         padding: 2.5rem 1.5rem;
         max-width: 90%;
+        max-width: 500px;
     }
     
     .message-box-title {
@@ -2166,7 +2168,7 @@ header {
 
     .social-links {
         justify-content: center;
-        margin-bottom: 1rem;
+        margin-bottom: 0rem;
         gap: 1.5rem;
     }
 
@@ -2183,8 +2185,7 @@ header {
     }
 
     .company-logo {
-        margin-bottom: 0.3rem;
-        margin-top: -12px;
+        margin-bottom: 1.5rem;
     }
 
     .iagto-logo {

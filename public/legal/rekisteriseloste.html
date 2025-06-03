@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rekisteriseloste - 59-Traveller</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        .terms-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+            background: var(--background-color-off-white);
+            min-height: 100vh;
+        }
+        
+        .terms-header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding-top: 2rem;
+        }
+        
+        .terms-header h1 {
+            font-family: var(--font-heading);
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+        
+        .terms-header .logo {
+            margin-bottom: 2rem;
+        }
+        
+        .terms-header .logo img {
+            height: 80px;
+            width: auto;
+        }
+        
+        .terms-content {
+            font-family: var(--font-body);
+            line-height: 1.7;
+            color: var(--text-color);
+        }
+        
+        .terms-content h2 {
+            font-family: var(--font-heading);
+            font-size: 1.8rem;
+            color: var(--primary-color);
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .terms-content h3 {
+            font-family: var(--font-heading);
+            font-size: 1.4rem;
+            color: var(--primary-color);
+            margin-top: 2rem;
+            margin-bottom: 0.8rem;
+        }
+        
+        .terms-content p {
+            margin-bottom: 1.2rem;
+            font-size: 1rem;
+        }
+        
+        .terms-content ul, .terms-content ol {
+            margin-bottom: 1.2rem;
+            padding-left: 2rem;
+        }
+        
+        .terms-content li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .close-button {
+            position: fixed;
+            top: 2rem;
+            right: 2rem;
+            background: var(--primary-color);
+            color: white;
+            border: none;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+            transition: background-color 0.3s;
+            z-index: 1000;
+        }
+        
+        .close-button:hover {
+            background: var(--accent-color);
+        }
+        
+        @media (max-width: 768px) {
+            .terms-container {
+                padding: 1rem;
+            }
+            
+            .terms-header h1 {
+                font-size: 2rem;
+            }
+            
+            .close-button {
+                top: 1rem;
+                right: 1rem;
+                width: 40px;
+                height: 40px;
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <button class="close-button" onclick="window.close()" title="Sulje ikkuna">
+        <i class="fas fa-times"></i>
+    </button>
+
+    <div class="terms-container">
+        <div class="terms-header">
+            <div class="logo">
+                <a href="../index.html" target="_blank">
+                    <img src="../assets/images/59-traveller-logo-no-circle.png" alt="59-Traveller">
+                </a>
+            </div>
+            <h1>Rekisteriseloste</h1>
+            <p style="color: var(--text-color); font-style: italic;">Päivitetty: 3.6.2025</p>
+        </div>
+
+        <div class="terms-content">
+            <h2>Rekisterin pitäjä</h2>
+            <p>
+                Finn Management Company Oy<br>
+                Melkonkatu 28 E, 00210 Helsinki<br>
+                Puhelin: +358 10 508 0580<br>
+                Kotisivut: www.59traveller.com<br>
+                Sähköposti: info@59traveller.com<br>
+                Y-tunnus 3356578-8<br>
+                Yhteyshenkilö: Markku Nord ja Henry Lahtonen
+            </p>
+
+            <h2>Rekisterin nimi</h2>
+            <p>59 Traveller asiakasrekisteri</p>
+
+            <h2>Rekisterin sisältö</h2>
+            <p>Rekisteriin tallennetaan ne tiedot, jotka saadaan rekisteröidyltä tarjouspyynnön tai matkavarauksen yhteydessä, mm. nimi ja sähköposti ja/tai puhelinnumero ja osoite. Tai asiakkaiden antamalla suostumuksella.</p>
+
+            <h2>Henkilötietojen käsittelyn tarkoitus</h2>
+            <p>Asiakas suhteiden hoito ja mainospostitus. Henkilötietoja voidaan käyttää rekisterinpitäjän markkinointitarkoituksiin henkilötietolain mukaisesti ja niitä säilytetään voimassaolevan lainsäädännön mukaisesti. Asiakkaan matkojen ja maksuliikenteen tiedot säilytetään kirjanpitolain ja viranomaissäännösten edellyttämän ajan.</p>
+
+            <h2>Rekisterin sisältämät tiedot</h2>
+            <ul>
+                <li>Nimi</li>
+                <li>Osoite</li>
+                <li>Puhelinnumero</li>
+                <li>Syntymäaika (pp.kk.vvvv)</li>
+                <li>Passitiedot (jos vaaditaan matkavaraukseen, esim. risteilyt, viisumit)</li>
+                <li>Sähköpostiosoite</li>
+                <li>Varaustiedot</li>
+            </ul>
+
+            <p>Asiakas voi antaa varauksen yhteydessä myös muun seurueen matkustajatietoja (ryhmät, yhdistykset), jolloin edellytetään, että tietojen antaja on kertonut tietojen eteenpäin toimittamisesta matkanjärjestäjälle sekä hänellä on kaikilta suostumus tietojen luovuttamiseen. Uutiskirje rekisteriin talletetaan asiakkaan nimi ja s-postiosoite. Olemme varmistaneet, että palveluntarjoajamme noudattavat tietosuojalainsäädäntöä.</p>
+
+            <p>Henkilötietolain mukaan rekisteröidyllä on oikeus saada pyydettäessä tietää, mitä tietoja hänestä on henkilörekisterissä, sekä saada tietonsa korjatuksi tai pyytää poistamaan tiedot rekisteristä, ja kieltää tietojen käyttö.</p>
+
+            <h2>Tietolähteet</h2>
+            <p>Asiakastiedot saadaan asiakkaalta asiakassuhteen syntyessä.</p>
+
+            <h2>Tietojen luovutukset</h2>
+            <p>Matkavarausten yhteydessä voidaan joutua luovuttamaan tietoja myös EU:n tai ETA:n ulkopuolisiin maihin, joiden tietosuojalainsäädäntö poikkeaa EU:n sääntelystä. (mm. matkustuslupa, viisumikäsittely). Matkanjärjestäjä voi pyydettäessä toimittaa matkustajien tietoja viranomaisille lainsäädännön puitteissa.</p>
+
+            <h2>Käsittelyn kesto</h2>
+            <p>Henkilötietoja käsitellään pääsääntöisesti niin kauan, kuin asiakkuus on voimassa tai enintään 5 vuotta viimeisestä matkasta. Markkinointilistaltamme rekisteröity pääsee poistumaan itse jokaisessa lähettämässämme markkinointisähköpostissamme olevan linkin kautta.</p>
+
+            <h2>Henkilötietojen käsittelijät</h2>
+            <p>Asiakasrekisteriä käsittelevät 59 Travellerin työntekijät. Voimme myös ulkoistaa henkilötietojen käsittelyn osittain kolmannelle osapuolelle, jolloin takaamme sopimusjärjestelyin, että henkilötietoja käsitellään voimassa olevan tietosuojalainsäädännön mukaisesti ja muutoin asianmukaisesti.</p>
+
+            <h2>Tietojen siirto EU:n ulkopuolelle</h2>
+            <p>Kun tietoja siirretään EU:n ja ETA:n ulkopuolelle, huolehdimme henkilötietojen suojan riittävästä tasosta muun muassa sopimalla henkilötietojen luottamuksellisuuteen ja käsittelyyn liittyvistä asioista lainsäädännön edellyttämällä tavalla.</p>
+
+            <h2>Automaattinen päätöksenteko ja profilointi</h2>
+            <p>Emme käytä tietoja automaattiseen päätöksentekoon tai profilointiin</p>
+
+            <h2>Tietosuojavaltuutetun yhteystiedot</h2>
+            <p><a href="http://www.tietosuoja.fi/yhteystiedot" target="_blank">www.tietosuoja.fi/yhteystiedot</a></p>
+            
+            <p style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid #ddd; font-style: italic; color: #666;">
+                <small>Tämä rekisteriseloste on voimassa toistaiseksi. Pidätämme oikeuden muuttaa tietosuojakäytäntöjämme. Muutoksista ilmoitamme verkkosivuillamme.</small>
+            </p>
+        </div>
+    </div>
+
+    <script>
+        // Add keyboard shortcut to close (Esc key)
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                window.close();
+            }
+        });
+    </script>
+</body>
+</html> 

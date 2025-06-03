@@ -12,7 +12,7 @@ class DestinationCarousel {
     }
 
     get isMobile() {
-        return window.innerWidth <= 768;
+        return window.innerWidth <= 1024;
     }
 
     async init() {
