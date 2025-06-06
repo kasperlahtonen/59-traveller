@@ -20,7 +20,7 @@
                 Your browser does not support the video tag.
             </video>
             <div class="hero-banner-overlay">
-                <h1>59 Traveller</h1>
+                <img src="./assets/images/59-Traveller-Final-vaaka-white.png" alt="59 Traveller" class="hero-logo">
             </div>
         </section>
 
@@ -52,16 +52,34 @@
                     </div>
                     <div class="combined-content-column featured-journeys-column">
                         <div class="featured-journeys-inner">
-                            <div class="featured-journeys-list">
-                                <a href="/example-dunhill-links.html" class="journey-link">
-                                    <div class="journey-link-card">
-                                        <img src="assets/images/dunhill-links-image1.jpg" alt="Dunhill Links" class="journey-link-img">
-                                        <div class="journey-link-info">
-                                            <h3>Dunhill Links Experience</h3>
-                                            <p>59 Traveller x St Andrews Golfmatka Skotlantiin 3.-7.10.2025</p>
+                            <div class="journey-carousel-container">
+                                <div class="journey-carousel-track">
+                                    <a href="/example-dunhill-links.html" class="journey-link">
+                                        <div class="journey-link-card">
+                                            <img src="./assets/images/dunhill-links-image1.jpg" alt="Dunhill Links" class="journey-link-img">
+                                            <div class="journey-link-info">
+                                                <h3>Dunhill Links Experience</h3>
+                                                <p>59 Traveller x St Andrews Golfmatka Skotlantiin 3.-7.10.2025</p>
+                                            </div>
                                         </div>
+                                    </a>
+                                    <a href="/example-masters.html" class="journey-link">
+                                        <div class="journey-link-card">
+                                            <img src="./assets/images/bogogno-image-1.jpg" alt="Masters Tournament" class="journey-link-img">
+                                            <div class="journey-link-info">
+                                                <h3>Golf & Health at Bogogno Resort</h3>
+                                                <p>59 Traveler x Julia Kettinen Golfmatka Pohjois-Italiaan 24.9-1.10.2025</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="journey-carousel-controls">
+                                    <button class="journey-carousel-button prev" aria-label="Previous journey"><i class="fas fa-chevron-left"></i></button>
+                                    <div class="journey-carousel-dots">
+                                        <!-- Dots will be dynamically inserted here -->
                                     </div>
-                                </a>
+                                    <button class="journey-carousel-button next" aria-label="Next journey"><i class="fas fa-chevron-right"></i></button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -111,5 +129,6 @@
 
     <script type="module" src="./js/main.js"></script>
     <script type="module" src="./js/carousel.js"></script>
+    <script type="module" src="./js/journey-carousel.js"></script>
 </body>
 </html>
