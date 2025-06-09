@@ -5,7 +5,8 @@ export default {
         input: {
           main: 'index.html',
           businesses: 'businesses.html',
-          dunhill: 'example-dunhill-links.html',
+          about: 'about-us.html',
+          dunhill: 'dunhill-links-theme.html',
           bogogno: 'julia-bogogno-theme.html'
         }
       },
